@@ -1,0 +1,18 @@
+{
+  "name": "invisiblequantam",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": "20 || 22 || 24"
+  },
+  "scripts": {
+    "preview": "http-server . -p 8080 -c-1",
+    "serve": "firebase emulators:start --only hosting",
+    "deploy": "firebase deploy --only hosting",
+    "hosting:channel": "firebase hosting:channel:deploy preview"
+  },
+  "devDependencies": {
+    "firebase-tools": "^14.26.0",
+    "http-server": "^14.1.1"
+  }
+}
