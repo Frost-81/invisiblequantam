@@ -1,6 +1,6 @@
-@font-face {
+﻿@font-face {
   font-family: Ibmplexsans Variablefont Wdth Wght;
-  src: url('../images/') format("truetype");
+  src: url('../fonts/IBMPlexSans-VariableFont_wdthwght.ttf') format("truetype");
   font-weight: 100 700;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: Ibmplexsans Variablefont Wdth Wght;
-  src: url('../images/') format("truetype");
+  src: url('../fonts/IBMPlexSans-Italic-VariableFont_wdthwght.ttf') format("truetype");
   font-weight: 100 700;
   font-style: italic;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: Roboto Variablefont Wdth Wght;
-  src: url('../images/') format("truetype");
+  src: url('../fonts/Roboto-VariableFont_wdthwght.ttf') format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: Roboto Variablefont Wdth Wght;
-  src: url('../images/') format("truetype");
+  src: url('../fonts/Roboto-Italic-VariableFont_wdthwght.ttf') format("truetype");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -1287,7 +1287,7 @@ img {
   color: var(--_colors---text-color--text-primary);
   appearance: none;
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1302,7 +1302,7 @@ img {
   border-color: var(--_colors---text-color--text-primary);
   box-shadow: 0 0 0 1px var(--_colors---text-color--text-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1318,7 +1318,7 @@ img {
   box-shadow: 0 0 0 1px var(--_colors---text-color--text-inverse-primary);
   color: var(--_colors---text-color--text-inverse-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1329,7 +1329,7 @@ img {
   border-color: var(--_colors---text-color--text-inverse-primary);
   box-shadow: 0 0 0 1px var(--_colors---text-color--text-inverse-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1342,7 +1342,7 @@ img {
   transition: border-color .2s ease, color undefined ease, background-color undefined cubic-bezier(.165, .84, .44, 1), box-shadow undefined ease;
   color: var(--_colors---text-color--text-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1353,7 +1353,7 @@ img {
   border-color: var(--_colors---text-color--text-primary);
   box-shadow: 0 0 0 1px var(--_colors---text-color--text-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1366,7 +1366,7 @@ img {
   transition: border-color .2s ease, color undefined ease, background-color undefined cubic-bezier(.165, .84, .44, 1), box-shadow undefined ease;
   color: var(--_colors---text-color--text-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1377,7 +1377,7 @@ img {
   border-color: var(--_colors---text-color--text-primary);
   box-shadow: 0 0 0 1px var(--_colors---text-color--text-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1390,7 +1390,7 @@ img {
   transition: border-color .2s ease, color undefined ease, background-color undefined cubic-bezier(.165, .84, .44, 1), box-shadow undefined ease;
   color: var(--_colors---text-color--text-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -1401,7 +1401,7 @@ img {
   border-color: var(--_colors---text-color--text-primary);
   box-shadow: 0 0 0 1px var(--_colors---text-color--text-primary);
   background-color: #0000;
-  background-image: url('../images/');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2 5l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -11885,14 +11885,14 @@ img {
 
 @font-face {
   font-family: 'Ibmplexsans Variablefont Wdth Wght';
-  src: url('../images/') format('truetype');
+  src: url('../fonts/IBMPlexSans-VariableFont_wdthwght.ttf') format('truetype');
   font-weight: 100 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Ibmplexsans Variablefont Wdth Wght';
-  src: url('../images/') format('truetype');
+  src: url('../fonts/IBMPlexSans-Italic-VariableFont_wdthwght.ttf') format('truetype');
   font-weight: 100 700;
   font-style: italic;
   font-display: swap;
@@ -11913,14 +11913,14 @@ img {
 }
 @font-face {
   font-family: 'Roboto Variablefont Wdth Wght';
-  src: url('../images/') format('truetype');
+  src: url('../fonts/Roboto-VariableFont_wdthwght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Roboto Variablefont Wdth Wght';
-  src: url('../images/') format('truetype');
+  src: url('../fonts/Roboto-Italic-VariableFont_wdthwght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;

@@ -6,7 +6,43 @@
       "**/.*",
       "**/node_modules/**",
       "firebase-debug.log"
-    ]
+    ],
+    "cleanUrls": false,
+    "trailingSlash": false,
+    "redirects": [
+      { "source": "/fr-ca", "destination": "/index.html", "type": 302 },
+      { "source": "/fr-ca/**", "destination": "/index.html", "type": 302 }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|webp|avif|svg|ico|woff|woff2|ttf|otf|eot)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=604800, immutable" }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=3600" }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        ]
+      },
+      {
+        "source": "**",
+        "headers": [
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+          { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        ]
+      }
+    ],
+    "404": "404.html"
   },
   "emulators": {
     "hosting": {
