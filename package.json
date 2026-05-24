@@ -6,7 +6,7 @@
     "node": "20 || 22 || 24"
   },
   "scripts": {
-    "build": "shx rm -rf dist && shx mkdir -p dist && copyfiles -u 0 *.html css/**/* js/**/* images/**/* fonts/**/* documents/**/* dist",
+    "build": "shx rm -rf dist && shx mkdir -p dist && copyfiles -u 0 *.html css/**/* js/**/* images/**/* fonts/**/* documents/**/* videos/**/* dist",
     "preview": "npm run build && http-server dist -p 4173 -c-1",
     "serve": "npm run build && firebase emulators:start --only hosting",
     "deploy": "npm run build && firebase deploy --only hosting",
