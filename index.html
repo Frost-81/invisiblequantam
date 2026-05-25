@@ -17,6 +17,11 @@
   <link href="css/cyber-resilience-compliance.webflow.css" rel="stylesheet" type="text/css">
   <style>html.w-mod-js:not(.w-mod-ix3) :is(.header .icon:is(+ h1, + h2), .header .eyebrow_block, .header .breadcrumb-nav, :is(h1,h2,h3,.heading_primary,.heading_secondary,.heading_tertiary,.heading_hero,.subheading,.header p,.eyebrow):not(:where(.card *,.card-link *,.content-block *,.content-block-link *,.rich-text *,li p))) {visibility: hidden !important;}</style>
   <style>
+    html,
+    body {
+      overflow-x: clip;
+    }
+
     .home-page .uui-navbar07_component {
       background-color: rgba(11, 31, 42, .18);
       border-bottom-color: rgba(255, 255, 255, .14);
@@ -134,7 +139,10 @@
     .home-page .home-client-copy .heading_primary {
       color: #0b1f2a;
       text-align: center;
-      margin-bottom: .85rem;
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      letter-spacing: -.03em;
+      line-height: 1.1;
+      margin-bottom: .75rem;
     }
 
     .home-page .home-client-copy .subheading {
@@ -151,18 +159,12 @@
     }
 
     .home-page .home-client-image-frame {
-      border: 1px solid rgba(11, 31, 42, .08);
-      border-radius: 1.4rem;
-      background: linear-gradient(180deg, rgba(255, 255, 255, .72) 0%, rgba(230, 237, 242, .92) 100%);
-      box-shadow: 0 20px 45px rgba(11, 31, 42, .1);
       max-width: 29rem;
-      padding: 1rem;
       width: 100%;
     }
 
     .home-page .home-client-image-frame img {
-      aspect-ratio: 1 / 1;
-      border-radius: 1rem;
+      border-radius: 1.2rem;
       display: block;
       width: 100%;
     }
@@ -284,6 +286,10 @@
         margin-right: auto;
         max-width: 24rem;
       }
+
+      .home-page .home-client-image-frame img {
+        border-radius: 1rem;
+      }
     }
 
     @media screen and (max-width: 767px) {
@@ -291,12 +297,8 @@
         min-height: 68svh;
       }
 
-      .home-page .home-hero-video_media {
-        background-color: #0b1f2a;
-      }
-
       .home-page .home-hero-video_media video {
-        object-fit: contain;
+        object-fit: cover;
         object-position: center center;
       }
 
@@ -350,7 +352,6 @@
 
       .home-page .home-client-image-frame {
         max-width: 21rem;
-        padding: .75rem;
       }
 
       .home-page .home-hero-stat {
@@ -379,8 +380,20 @@
     }
 
     @media screen and (max-width: 479px) {
-      .home-page .uui-navbar07_container {
+      .home-page .uui-navbar07_component {
+        box-sizing: border-box;
+        flex-flow: row nowrap;
+        left: 0;
+        right: 0;
+        overflow: visible;
         padding-left: .2rem;
+        padding-right: .2rem;
+        position: fixed;
+        width: auto;
+      }
+
+      .home-page .uui-navbar07_container {
+        padding-left: 0;
         padding-right: 0;
       }
 
@@ -423,9 +436,11 @@
       }
 
       .home-page .home-client-image-frame {
-        border-radius: 1.1rem;
         max-width: 18rem;
-        padding: .65rem;
+      }
+
+      .home-page .home-client-image-frame img {
+        border-radius: .85rem;
       }
 
       .home-page .home-hero-stats {
