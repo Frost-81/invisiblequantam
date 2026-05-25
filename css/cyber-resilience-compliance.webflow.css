@@ -9565,11 +9565,11 @@ img {
   }
 
   .uui-navbar07_dropdown-link .uui-navbar07_item-heading {
-    color: #fff;
+    color: #fff !important;
   }
 
   .uui-navbar07_dropdown-link .uui-text-size-small {
-    color: rgba(230, 237, 242, .78);
+    color: rgba(230, 237, 242, .78) !important;
   }
 
   .uui-navbar07_dropdown-link:hover {
