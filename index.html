@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><!--  Last Published: Sat May 23 2026 18:13:29 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Sat May 23 2026 18:13:29 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="69bc99d1abcfdb08ef02fac4" data-wf-site="69bc99d0abcfdb08ef02fac1" lang="en-CA">
 <head>
   <meta charset="utf-8">
@@ -64,6 +64,44 @@
       z-index: 2;
     }
 
+    .home-page .home-hero-copy {
+      max-width: 52rem;
+    }
+
+    .home-page .home-hero-stats {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 76rem;
+    }
+
+    .home-page .home-hero-stats_grid {
+      align-items: stretch;
+    }
+
+    .home-page .home-hero-stat {
+      border: 1px solid rgba(230, 237, 242, .12);
+      border-radius: 1rem;
+      background: linear-gradient(180deg, rgba(11, 31, 42, .34) 0%, rgba(11, 31, 42, .52) 100%);
+      box-shadow: 0 20px 40px rgba(4, 12, 18, .14);
+      padding: 1rem;
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+    }
+
+    .home-page .home-hero-stat .heading_secondary {
+      color: #fff;
+      font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+      line-height: 1.1;
+    }
+
+    .home-page .home-hero-stat .paragraph_small {
+      margin-bottom: .35rem;
+    }
+
+    .home-page .home-hero-stat .text-color_secondary {
+      color: rgba(230, 237, 242, .82);
+    }
+
     @media screen and (max-width: 991px) {
       .home-page .uui-navbar07_component {
         background-color: rgba(11, 31, 42, .2);
@@ -115,7 +153,7 @@
       }
 
       .home-page .home-hero-video {
-        min-height: 100svh;
+        min-height: 82svh;
       }
 
       .home-page .home-hero-video_media video {
@@ -123,9 +161,28 @@
       }
 
       .home-page .home-hero-video > .container {
-        min-height: 100svh;
-        padding-top: 7rem;
-        padding-bottom: 2rem;
+        min-height: 82svh;
+        padding-top: 6.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      .home-page .home-hero-copy {
+        max-width: 40rem;
+      }
+
+      .home-page .home-hero-copy .heading_hero {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      .home-page .home-hero-copy .subheading {
+        max-width: 34rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .home-page .home-hero-stats {
+        margin-top: 1rem;
       }
 
       .home-page .uui-navbar07_menu .switchers_item {
@@ -141,15 +198,88 @@
       }
 
       .home-page .uui-navbar07_menu .switcher-1_link {
-        background-color: rgba(11, 31, 42, .06);
-        border-color: rgba(11, 31, 42, .16);
-        color: rgba(11, 31, 42, .84);
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, .36);
       }
 
       .home-page .uui-navbar07_menu .switcher-1_link[aria-pressed="true"] {
-        background-color: rgba(11, 31, 42, .12);
-        border-color: rgba(11, 31, 42, .3);
-        color: #0b1f2a;
+        background: none;
+        border: none;
+        color: #fff;
+        box-shadow: none;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .home-page .home-hero-video {
+        min-height: 72svh;
+      }
+
+      .home-page .home-hero-video_media video {
+        object-position: center 32%;
+      }
+
+      .home-page .home-hero-video > .container {
+        min-height: 72svh;
+        padding-top: 5.9rem;
+        padding-bottom: 1.1rem;
+      }
+
+      .home-page .home-hero-copy {
+        max-width: 100%;
+      }
+
+      .home-page .home-hero-copy .heading_hero {
+        font-size: clamp(2.35rem, 8vw, 3.25rem);
+        line-height: 1.04;
+        letter-spacing: -.025em;
+        margin-bottom: .7rem;
+      }
+
+      .home-page .home-hero-copy .subheading {
+        font-size: .96rem;
+        line-height: 1.5;
+        max-width: 33rem;
+        margin-bottom: 0;
+      }
+
+      .home-page .home-hero-copy .subheading p + p {
+        margin-top: .45rem;
+      }
+
+      .home-page .home-hero-stats {
+        margin-top: .85rem;
+      }
+
+      .home-page .home-hero-stats_grid {
+        display: grid;
+        gap: .75rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .home-page .home-hero-stat {
+        min-height: 100%;
+        padding: .95rem .85rem;
+      }
+
+      .home-page .home-hero-stat .heading_secondary {
+        font-size: 1.2rem;
+        margin-bottom: .35rem;
+      }
+
+      .home-page .home-hero-stat .paragraph_small {
+        font-size: .81rem;
+        line-height: 1.42;
+      }
+
+      .home-page .home-hero-stat .paragraph_small:not(.text-color_secondary) {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .home-page .home-hero-stat .text-color_secondary {
+        color: rgba(230, 237, 242, .76);
       }
     }
 
@@ -159,8 +289,69 @@
         padding-right: 0;
       }
 
+      .home-page .home-hero-video {
+        min-height: 64svh;
+      }
+
       .home-page .home-hero-video > .container {
-        padding-top: 6.5rem;
+        min-height: 64svh;
+        padding-top: 5.45rem;
+        padding-bottom: 1rem;
+      }
+
+      .home-page .home-hero-copy {
+        max-width: 100%;
+      }
+
+      .home-page .home-hero-copy .heading_hero {
+        font-size: clamp(2.1rem, 8.5vw, 2.8rem);
+        line-height: 1.08;
+        letter-spacing: -.02em;
+        margin-bottom: .6rem;
+      }
+
+      .home-page .home-hero-copy .subheading {
+        font-size: .92rem;
+        line-height: 1.48;
+        max-width: 100%;
+      }
+
+      .home-page .home-hero-copy .subheading p + p {
+        margin-top: .55rem;
+      }
+
+      .home-page .home-hero-stats {
+        margin-top: 1rem;
+      }
+
+      .home-page .home-hero-stats_grid {
+        display: grid;
+        gap: .65rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .home-page .home-hero-stat {
+        min-height: 100%;
+        padding: .85rem .75rem;
+      }
+
+      .home-page .home-hero-stat .heading_secondary {
+        font-size: 1.05rem;
+        margin-bottom: .3rem;
+      }
+
+      .home-page .home-hero-stat .paragraph_small {
+        font-size: .76rem;
+        line-height: 1.35;
+      }
+
+      .home-page .home-hero-stat .paragraph_small:not(.text-color_secondary) {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .home-page .home-hero-stat .text-color_secondary {
+        color: rgba(230, 237, 242, .74);
       }
     }
   </style>
@@ -228,9 +419,7 @@
 <body class="home-page">
   <div data-animation="default" class="uui-navbar07_component w-nav" data-easing2="ease" data-wf--custom-nav-english--variant="base" data-easing="ease" data-collapse="medium" data-w-id="2028308d-316f-c0f7-51fc-6b783cd3d343" role="banner" data-duration="400">
     <div class="uui-navbar07_container">
-      <div class="w-layout-blockcontainer w-container">
-        <div>Invisible Quantum Labs</div>
-      </div>
+      <a href="index.html" aria-label="Invisible Quantum Labs home" class="uui-navbar07_logo-link w-nav-brand"><img src="images/Navbarlogo5.png" loading="eager" alt="Invisible Quantum Labs logo" class="uui-navbar07_logo-image"></a>
       <nav role="navigation" class="uui-navbar07_menu w-nav-menu">
         <div class="uui-navbar07_menu-left">
           <a href="index.html" aria-current="page" class="uui-navbar07_link w-nav-link w--current" data-i18n="nav.home">Home</a>
@@ -334,7 +523,7 @@
     </div>
     <div class="container">
       <div class="w-layout-grid grid_5-col tablet-1-col-1-2 grid-5-fix">
-        <div id="w-node-_7dcd5c62-4318-6e73-3ef0-7a35e812b457-3483d0ed" class="grid-item-manual w-node-_8dcf5392-661f-20e6-feb7-726e6258eb57-ef02fac4" style="grid-column: 1 / -1; max-width: 52rem;">
+        <div id="w-node-_7dcd5c62-4318-6e73-3ef0-7a35e812b457-3483d0ed" class="grid-item-manual w-node-_8dcf5392-661f-20e6-feb7-726e6258eb57-ef02fac4 home-hero-copy" style="grid-column: 1 / -1; max-width: 52rem;">
           <div class="header margin-bottom_none">
             <p class="heading_hero" data-i18n="index.hero.heading">Evidence you can defend</p>
             <div class="subheading rich-text w-richtext" data-i18n-html="index.hero.subheading">
@@ -346,24 +535,24 @@
           </div>
         </div>
       </div>
-      <div id="w-node-_2c856a23-403e-a1e8-9a1d-d79b13e5697b-3483d0ed" class="content-block margin-top_medium w-node-_8dcf5392-661f-20e6-feb7-726e6258eb7a-ef02fac4">
-        <div class="w-layout-grid grid_4-col gap-small">
-          <div id="w-node-a7281c5d-47ba-5880-52f9-a243ea021ffd-3483d0ed" class="content-block w-node-_8dcf5392-661f-20e6-feb7-726e6258eb63-ef02fac4">
+      <div id="w-node-_2c856a23-403e-a1e8-9a1d-d79b13e5697b-3483d0ed" class="content-block margin-top_medium w-node-_8dcf5392-661f-20e6-feb7-726e6258eb7a-ef02fac4 home-hero-stats">
+        <div class="w-layout-grid grid_4-col gap-small home-hero-stats_grid">
+          <div id="w-node-a7281c5d-47ba-5880-52f9-a243ea021ffd-3483d0ed" class="content-block w-node-_8dcf5392-661f-20e6-feb7-726e6258eb63-ef02fac4 home-hero-stat">
             <p class="heading_secondary margin-bottom_none">9 yrs</p>
             <div class="paragraph_small" data-i18n="index.stats.label1">Police Detective background</div>
             <div class="paragraph_small text-color_secondary" data-i18n="index.stats.desc1">Child abuse, major crimes and internal affairs criminal investigations</div>
           </div>
-          <div id="w-node-a7281c5d-47ba-5880-52f9-a243ea022004-3483d0ed" class="content-block w-node-_8dcf5392-661f-20e6-feb7-726e6258eb6a-ef02fac4">
+          <div id="w-node-a7281c5d-47ba-5880-52f9-a243ea022004-3483d0ed" class="content-block w-node-_8dcf5392-661f-20e6-feb7-726e6258eb6a-ef02fac4 home-hero-stat">
             <p class="heading_secondary margin-bottom_none">9 yrs</p>
             <div class="paragraph_small" data-i18n="index.stats.label2">Investigation leadership</div>
             <div class="paragraph_small text-color_secondary" data-i18n="index.stats.desc2">Fraud, missing persons, crime scenes coverage and major crimes management</div>
           </div>
-          <div id="w-node-a7281c5d-47ba-5880-52f9-a243ea02200b-3483d0ed" class="content-block w-node-_8dcf5392-661f-20e6-feb7-726e6258eb71-ef02fac4">
+          <div id="w-node-a7281c5d-47ba-5880-52f9-a243ea02200b-3483d0ed" class="content-block w-node-_8dcf5392-661f-20e6-feb7-726e6258eb71-ef02fac4 home-hero-stat">
             <p class="heading_secondary margin-bottom_none">3+ yrs</p>
             <div class="paragraph_small" data-i18n="index.stats.label3">Digital Forensics Police Lab manager</div>
             <div class="paragraph_small text-color_secondary" data-i18n="index.stats.desc3">Advisory on digital forensics in homicides, child abuse and organized crime investigations</div>
           </div>
-          <div id="w-node-a7281c5d-47ba-5880-52f9-a243ea022012-3483d0ed" class="content-block w-node-_8dcf5392-661f-20e6-feb7-726e6258eb78-ef02fac4">
+          <div id="w-node-a7281c5d-47ba-5880-52f9-a243ea022012-3483d0ed" class="content-block w-node-_8dcf5392-661f-20e6-feb7-726e6258eb78-ef02fac4 home-hero-stat">
             <p class="heading_secondary margin-bottom_none">Since 2025</p>
             <div class="paragraph_small" data-i18n="index.stats.label4">Private Detective &amp; Digital Forensics Lead</div>
             <div class="paragraph_small text-color_secondary" data-i18n="index.stats.desc4">Corporate services to SME for insider threats management</div>
