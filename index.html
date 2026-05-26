@@ -17,26 +17,6 @@
   <link href="css/cyber-resilience-compliance.webflow.css" rel="stylesheet" type="text/css">
   <style>html.w-mod-js:not(.w-mod-ix3) :is(.header .icon:is(+ h1, + h2), .header .eyebrow_block, .header .breadcrumb-nav, :is(h1,h2,h3,.heading_primary,.heading_secondary,.heading_tertiary,.heading_hero,.subheading,.header p,.eyebrow):not(:where(.card *,.card-link *,.content-block *,.content-block-link *,.rich-text *,li p))) {visibility: hidden !important;}</style>
   <style>
-    html,
-    body {
-      overflow-x: clip;
-    }
-
-    .home-page .uui-navbar07_component {
-      background-color: rgba(11, 31, 42, .18);
-      border-bottom-color: rgba(255, 255, 255, .14);
-      box-shadow: none;
-      -webkit-backdrop-filter: blur(12px);
-      backdrop-filter: blur(12px);
-      transition: background-color .3s ease, border-color .3s ease, box-shadow .3s ease;
-    }
-
-    .home-page .uui-navbar07_component.is-scrolled {
-      background-color: rgba(11, 31, 42, .94);
-      border-bottom-color: rgba(230, 237, 242, .18);
-      box-shadow: 0 14px 40px rgba(11, 31, 42, .18);
-    }
-
     .home-page .home-hero-video {
       background-color: transparent;
       isolation: isolate;
@@ -58,7 +38,7 @@
     }
 
     .home-page .home-hero-video_scrim {
-      background: linear-gradient(180deg, rgba(11, 31, 42, .3) 0%, rgba(11, 31, 42, .18) 28%, rgba(11, 31, 42, .68) 100%);
+      background: linear-gradient(180deg, rgba(22, 40, 80, .58) 0%, rgba(22, 40, 80, .58) 100%);
       inset: 0;
       position: absolute;
       z-index: 1;
@@ -72,7 +52,7 @@
     .home-page .home-hero-copy {
       border: 1px solid rgba(230, 237, 242, .12);
       border-radius: 1.25rem;
-      background: linear-gradient(180deg, rgba(11, 31, 42, .34) 0%, rgba(11, 31, 42, .52) 100%);
+      background: linear-gradient(180deg, rgba(22, 40, 80, .40) 0%, rgba(22, 40, 80, .40) 100%);
       box-shadow: 0 20px 40px rgba(4, 12, 18, .14);
       max-width: 52rem;
       padding: 1.2rem 1.65rem 1.5rem 1.65rem;
@@ -98,7 +78,7 @@
     .home-page .home-hero-stat {
       border: 1px solid rgba(230, 237, 242, .12);
       border-radius: 1rem;
-      background: linear-gradient(180deg, rgba(11, 31, 42, .34) 0%, rgba(11, 31, 42, .52) 100%);
+      background: linear-gradient(180deg, rgba(22, 40, 80, .40) 0%, rgba(22, 40, 80, .40) 100%);
       box-shadow: 0 20px 40px rgba(4, 12, 18, .14);
       padding: 1rem;
       -webkit-backdrop-filter: blur(6px);
@@ -174,55 +154,6 @@
     }
 
     @media screen and (max-width: 991px) {
-      .home-page .uui-navbar07_component {
-        background-color: rgba(11, 31, 42, .2);
-        border-bottom-color: rgba(255, 255, 255, .12);
-        box-shadow: none;
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-      }
-
-      .home-page .uui-navbar07_component.is-scrolled,
-      .home-page .uui-navbar07_component:has(.uui-navbar07_menu-button.w--open) {
-        background-color: rgba(11, 31, 42, .86);
-        border-bottom-color: rgba(230, 237, 242, .16);
-        box-shadow: 0 14px 40px rgba(11, 31, 42, .18);
-      }
-
-      .home-page .uui-navbar07_container {
-        max-height: 4.5rem;
-        padding-left: .35rem;
-        padding-right: .15rem;
-      }
-
-      .home-page .uui-navbar07_menu-button {
-        background-color: transparent;
-        border-radius: 999px;
-        margin-left: auto;
-        padding: 0;
-      }
-
-      .home-page .menu-icon_component {
-        background-color: rgba(255, 255, 255, .08);
-        border: 1px solid rgba(255, 255, 255, .14);
-        border-radius: 999px;
-        height: 2.5rem;
-        margin-right: 0;
-        width: 2.5rem;
-      }
-
-      .home-page .menu-icon_line-top,
-      .home-page .menu-icon_line-middle,
-      .home-page .menu-icon_line-bottom {
-        background-color: rgba(255, 255, 255, .96);
-        width: 18px;
-      }
-
-      .home-page .menu-icon_line-middle {
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-
       .home-page .home-hero-video {
         min-height: 82svh;
       }
@@ -254,42 +185,6 @@
 
       .home-page .home-hero-stats {
         margin-top: 1rem;
-      }
-
-      .home-page .uui-navbar07_menu .switchers_item {
-        height: auto;
-        justify-content: flex-start;
-        margin-top: 1rem;
-        width: 100%;
-      }
-
-      .home-page .uui-navbar07_menu .switcher-1 {
-        justify-content: flex-start;
-        width: 100%;
-      }
-
-      .home-page .uui-navbar07_menu .switcher-1_link {
-        background: none;
-        border: none;
-        color: rgba(255, 255, 255, .36);
-      }
-
-      .home-page .uui-navbar07_menu .switcher-1_link[aria-pressed="true"] {
-        background: none;
-        border: none;
-        color: #fff;
-        box-shadow: none;
-      }
-
-      .home-page .uui-navbar07_dropdown-list.w--open .uui-navbar07_dropdown-link,
-      .home-page .uui-navbar07_dropdown-list.w--open .uui-navbar07_dropdown-link .uui-navbar07_item-heading,
-      .home-page .uui-navbar07_dropdown-list.w--open .uui-navbar07_dropdown-link .uui-text-size-small,
-      .home-page .uui-navbar07_dropdown-list.w--open .uui-navbar07_dropdown-link .uui-navbar07_icon-wrapper {
-        color: #fff !important;
-      }
-
-      .home-page .uui-navbar07_dropdown-list.w--open .uui-navbar07_dropdown-link .uui-text-size-small {
-        color: rgba(230, 237, 242, .82) !important;
       }
 
       .home-page .home-client-layout {
@@ -395,23 +290,6 @@
     }
 
     @media screen and (max-width: 479px) {
-      .home-page .uui-navbar07_component {
-        box-sizing: border-box;
-        flex-flow: row nowrap;
-        left: 0;
-        right: 0;
-        overflow: visible;
-        padding-left: .2rem;
-        padding-right: .2rem;
-        position: fixed;
-        width: auto;
-      }
-
-      .home-page .uui-navbar07_container {
-        padding-left: 0;
-        padding-right: 0;
-      }
-
       .home-page .home-hero-video {
         min-height: 58svh;
       }
@@ -868,22 +746,7 @@
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
-  <script>
-    (function() {
-      var navbar = document.querySelector('.uui-navbar07_component');
-
-      if (!navbar) {
-        return;
-      }
-
-      var updateNavbarState = function() {
-        navbar.classList.toggle('is-scrolled', window.scrollY > 24);
-      };
-
-      updateNavbarState();
-      window.addEventListener('scroll', updateNavbarState, { passive: true });
-    })();
-  </script>
+  <script src="js/navbar.js"></script>
   <script src="js/translations.js"></script>
   <script src="js/i18n.js"></script>
 </body>

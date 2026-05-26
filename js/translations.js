@@ -130,9 +130,9 @@ window.TRANSLATIONS = {
     'process.form.error': 'Submission failed. Please try again.',
 
     /* ── Protect your organization page ─────────────────────── */
-    'protect.hero.title': 'Identify &amp;<br>Manage <br>Insider <br>Threats',
+    'protect.hero.title': 'Identify &amp; Manage Insider Threats',
     'protect.hero.imageAlt': 'Corporate loss from insider threats - Financial - Reputational - Loss of trust',
-    'protect.intro': 'Many organizations focus only on external threats, but some of the most damaging risks originate from within. These risks are difficult to detect without the right expertise and tools. Our approach combines digital forensics, risk assessment, and technical countermeasures to help organizations stay protected and in control of the enterprise environment.',
+    'protect.intro': 'Some of the most damaging risks come from inside the organization. We combine digital forensics, risk assessment, and technical countermeasures to help you detect insider threats early and stay in control.',
     'protect.section1.heading': 'Corporate internal threats',
     'protect.section2.heading': 'Technical Countermeasures',
     'protect.card1.heading': 'Device compromise checks',
@@ -303,9 +303,9 @@ window.TRANSLATIONS = {
     'process.form.error': 'Échec de la soumission. Veuillez réessayer.',
 
     /* ── Protect your organization page ─────────────────────── */
-    'protect.hero.title': 'Identifier et<br>gérer les<br>menaces<br>internes',
-    'protect.hero.imageAlt': 'Pertes corporatives liées aux menaces internes - financières - réputationnelles - perte de confiance',
-    'protect.intro': "De nombreuses organisations se concentrent uniquement sur les menaces externes, mais certains des risques les plus dommageables proviennent de l'intérieur. Ces risques sont difficiles à détecter sans l'expertise et les outils appropriés. Notre approche combine la forensique numérique, l'évaluation des risques et les contre-mesures techniques pour aider les organisations à rester protégées et maîtresses de leur environnement.",
+    'protect.hero.title': 'Identifier et gérer les menaces internes',
+    'protect.hero.imageAlt': 'Illustration des pertes corporatives liées aux menaces internes',
+    'protect.intro': "Certains des risques les plus dommageables viennent de l'interne. Nous combinons la forensique numérique, l'évaluation des risques et les contre-mesures techniques pour vous aider à détecter les menaces internes plus tôt et à garder le contrôle.",
     'protect.section1.heading': 'Menaces internes corporatives',
     'protect.section2.heading': 'Contre-mesures techniques',
     'protect.card1.heading': 'Vérification de compromission des appareils',

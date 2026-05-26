@@ -17,10 +17,96 @@
   <link href="css/cyber-resilience-compliance.webflow.css" rel="stylesheet" type="text/css">
   <style>html.w-mod-js:not(.w-mod-ix3) :is(.header .icon:is(+ h1, + h2), .header .eyebrow_block, .header .breadcrumb-nav, :is(h1,h2,h3,.heading_primary,.heading_secondary,.heading_tertiary,.heading_hero,.subheading,.header p,.eyebrow):not(:where(.card *,.card-link *,.content-block *,.content-block-link *,.rich-text *,li p))) {visibility: hidden !important;}</style>
   <style>
+    .protect-page {
+      overflow-x: clip;
+    }
+
+    .protect-hero {
+      padding-top: calc(var(--_sizes---section--section-padding-vertical) + 4.5rem);
+      background:
+        radial-gradient(circle at top left, rgba(197, 164, 109, .12), transparent 28%),
+        linear-gradient(180deg, #162850 0%, #162850 100%);
+    }
+
+    .protect-hero_container,
+    .protect-hero_layout,
+    .protect-hero_media,
+    .protect-hero_image {
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .protect-hero_layout.w-layout-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 34rem) minmax(22rem, 38rem);
+      grid-template-rows: auto;
+      align-items: center;
+      justify-content: space-between;
+      gap: clamp(1.25rem, 2.2vw, 2rem);
+      max-width: 76rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+
+    .protect-hero_copy {
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      max-width: 34rem;
+    }
+
+    .protect-hero_title {
+      margin: 0;
+      color: #fff;
+      font-family: "Ibmplexsans Variablefont Wdth Wght", Arial, sans-serif;
+      font-size: clamp(3.2rem, 6vw, 5.1rem);
+      font-weight: 700;
+      letter-spacing: -.055em;
+      line-height: .92;
+      max-width: 10ch;
+      text-wrap: balance;
+    }
+
+    .protect-hero_title br {
+      display: none;
+    }
+
+    .protect-hero_text {
+      margin: 0;
+      color: rgba(230, 237, 242, .88);
+      font-size: 1.02rem;
+      line-height: 1.68;
+      max-width: 32rem;
+    }
+
+    .protect-hero_media {
+      grid-column: 2;
+      grid-row: 1;
+      align-self: center;
+      justify-self: end;
+      width: 100%;
+      min-height: 20rem;
+      max-width: 38rem;
+      aspect-ratio: 4 / 3;
+      border-radius: 1.5rem;
+      overflow: clip;
+      background: linear-gradient(180deg, rgba(230, 237, 242, .08) 0%, rgba(230, 237, 242, .02) 100%);
+      box-shadow: 0 26px 64px rgba(3, 11, 18, .34);
+    }
+
+    .protect-hero_image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .protect-contact-section {
       background:
         radial-gradient(circle at top left, rgba(214, 175, 101, .18), transparent 34%),
-        linear-gradient(180deg, rgba(243, 246, 249, .96) 0%, rgba(232, 238, 243, .92) 100%);
+        linear-gradient(180deg, rgba(243, 246, 249, .98) 0%, rgba(243, 246, 249, .94) 100%);
     }
 
     .protect-contact-layout {
@@ -41,7 +127,7 @@
       justify-content: space-between;
       gap: 1.5rem;
       color: #fff;
-      background: linear-gradient(160deg, #142748 0%, #0b1f2a 100%);
+      background: linear-gradient(160deg, #162850 0%, #162850 100%);
       box-shadow: 0 24px 56px rgba(11, 31, 42, .28);
     }
 
@@ -194,6 +280,28 @@
     }
 
     @media screen and (max-width: 991px) {
+      .protect-hero {
+        padding-top: calc(var(--_sizes---section--section-padding-vertical) + 4rem);
+      }
+
+      .protect-hero_layout.w-layout-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(20rem, 30rem);
+        gap: 1.5rem;
+      }
+
+      .protect-hero_title {
+        font-size: clamp(2.7rem, 7vw, 4rem);
+      }
+
+      .protect-hero_text {
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      .protect-hero_media {
+        min-height: 17rem;
+      }
+
       .protect-contact-aside,
       .protect-contact-main {
         padding: 1.7rem;
@@ -201,6 +309,40 @@
     }
 
     @media screen and (max-width: 767px) {
+      .protect-hero {
+        padding-top: calc(var(--_sizes---section--section-padding-vertical) + 5rem);
+      }
+
+      .protect-hero_layout.w-layout-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.25rem;
+      }
+
+      .protect-hero_copy,
+      .protect-hero_media {
+        grid-column: auto;
+        grid-row: auto;
+        max-width: none;
+      }
+
+      .protect-hero_title {
+        font-size: clamp(2.35rem, 11vw, 3.1rem);
+        line-height: .96;
+      }
+
+      .protect-hero_media {
+        justify-self: stretch;
+        min-height: 13.5rem;
+        aspect-ratio: 5 / 4;
+        border-radius: 1.1rem;
+      }
+
+      .protect-hero_text {
+        font-size: .98rem;
+        line-height: 1.62;
+      }
+
       .protect-contact-aside,
       .protect-contact-main {
         padding: 1.35rem;
@@ -332,7 +474,7 @@
   <!--  Cloudflare Turnstile  -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
 </head>
-<body>
+<body class="protect-page">
   <div data-animation="default" class="uui-navbar07_component w-nav" data-easing2="ease" data-wf--custom-nav-english--variant="base" data-easing="ease" data-collapse="medium" data-w-id="2028308d-316f-c0f7-51fc-6b783cd3d343" role="banner" data-duration="400">
     <div class="uui-navbar07_container">
       <a href="index.html" aria-label="Invisible Quantum Labs home" class="uui-navbar07_logo-link w-nav-brand"><img src="images/Navbarlogo5.png" loading="eager" alt="Invisible Quantum Labs logo" class="uui-navbar07_logo-image"></a>
@@ -430,16 +572,14 @@
       </div>
     </div>
   </div>
-  <header class="section is-inverse">
-    <div class="container">
-      <div id="w-node-_11324247-4d41-ae49-23cf-d69a3671483e-ef02fdd2" class="w-layout-layout wf-layout-layout">
-        <div class="w-layout-cell">
-          <h1 data-i18n-html="protect.hero.title">Identify &amp;<br>Manage <br>Insider <br>Threats</h1>
+  <header class="section is-inverse protect-hero">
+    <div class="container protect-hero_container">
+      <div id="w-node-_11324247-4d41-ae49-23cf-d69a3671483e-ef02fdd2" class="w-layout-layout wf-layout-layout protect-hero_layout">
+        <div class="w-layout-cell protect-hero_copy">
+          <h1 class="protect-hero_title" data-i18n-html="protect.hero.title">Identify &amp; Manage Insider Threats</h1>
+          <p class="protect-hero_text" data-i18n="protect.intro">Some of the most damaging risks come from inside the organization. We combine digital forensics, risk assessment, and technical countermeasures to help you detect insider threats early and stay in control.</p>
         </div>
-        <div id="w-node-_712cb675-dd54-5b8f-ba40-683cef488250-ef02fdd2" class="w-layout-cell"><img src="images/insiderthreatENG.webp" loading="lazy" width="1200" height="Auto" alt="Corporate loss from insider threats- Financial-Reputational-Loss of trust" data-i18n-attr="alt:protect.hero.imageAlt" srcset="images/insiderthreatENG-p-500.webp 500w, images/insiderthreatENG-p-800.webp 800w, images/insiderthreatENG-p-1080.webp 1080w, images/insiderthreatENG.webp 1536w" sizes="100vw" class="image-4"></div>
-        <div class="w-layout-cell">
-          <p data-i18n="protect.intro">Many organizations focus only on external threats, but some of the most damaging risks originate from within. These risks are difficult to detect without the right expertise and tools. Our approach combines digital forensics, risk assessment, and technical countermeasures to help organizations stay protected and in control of the enterprise environment.</p>
-        </div>
+        <div id="w-node-_712cb675-dd54-5b8f-ba40-683cef488250-ef02fdd2" class="w-layout-cell protect-hero_media"><img src="images/insiderthreatENG.webp" loading="eager" fetchpriority="high" width="1200" alt="Corporate loss from insider threats- Financial-Reputational-Loss of trust" data-i18n-attr="alt:protect.hero.imageAlt" srcset="images/insiderthreatENG-p-500.webp 500w, images/insiderthreatENG-p-800.webp 800w, images/insiderthreatENG-p-1080.webp 1080w, images/insiderthreatENG.webp 1536w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 46vw, 42vw" class="image-4 protect-hero_image"></div>
       </div>
     </div>
   </header>
@@ -631,6 +771,7 @@
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
+  <script src="js/navbar.js"></script>
     <script src="js/translations.js"></script>
   <script src="js/i18n.js"></script>
 </body>

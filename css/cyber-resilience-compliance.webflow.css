@@ -46,6 +46,18 @@
   font-display: swap;
 }
 
+html,
+body {
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
 :root {
   --_sizes---spacing--0-25x: .25rem;
   --_sizes---gap--xs-gap: var(--_sizes---spacing--1x);
@@ -7402,7 +7414,7 @@ img {
 
 .uui-navbar07_component {
   border-bottom: 1px solid var(--untitled-ui--gray100);
-  background-color: var(--_colors---background-color--bg-inverse);
+  background-color: #162850;
   width: 100%;
   max-width: none;
   height: auto;
@@ -7411,8 +7423,19 @@ img {
   align-items: center;
   margin-bottom: 0;
   padding: 0 10px;
+  border-bottom-color: rgba(255, 255, 255, .14);
+  box-shadow: none;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: background-color .3s ease, border-color .3s ease, box-shadow .3s ease;
   display: flex;
   position: fixed;
+}
+
+.uui-navbar07_component.is-scrolled {
+  background-color: #162850;
+  border-bottom-color: rgba(230, 237, 242, .18);
+  box-shadow: 0 14px 40px rgba(11, 31, 42, .18);
 }
 
 .uui-navbar07_container {
@@ -9382,6 +9405,34 @@ img {
     inset: auto 0% auto auto;
   }
 
+  .uui-navbar07_component {
+    background-color: #162850;
+    border-bottom-color: rgba(255, 255, 255, .12);
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .uui-navbar07_component.is-scrolled,
+  .uui-navbar07_component:has(.uui-navbar07_menu-button.w--open) {
+    background-color: #162850;
+    border-bottom-color: rgba(230, 237, 242, .16);
+    box-shadow: 0 14px 40px rgba(11, 31, 42, .18);
+  }
+
+  .uui-navbar07_container {
+    max-height: 4.5rem;
+    padding-left: .35rem;
+    padding-right: .15rem;
+  }
+
+  .uui-navbar07_menu-button {
+    background-color: #0000;
+    border-radius: 999px;
+    margin-left: auto;
+    padding: 0;
+  }
+
   .menu-icon_line-middle-inner {
     width: 4px;
     height: 0;
@@ -9390,44 +9441,47 @@ img {
   }
 
   .menu-icon_line-bottom {
-    background-color: var(--untitled-ui--gray700);
+    background-color: rgba(255, 255, 255, .96);
     border-radius: 1rem;
-    width: 24px;
+    width: 18px;
     height: 2px;
     padding-bottom: 0;
     padding-right: 0;
   }
 
   .menu-icon_line-middle {
-    background-color: var(--untitled-ui--gray700);
+    background-color: rgba(255, 255, 255, .96);
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
-    width: 24px;
+    width: 18px;
     height: 2px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding-bottom: 0;
     padding-right: 0;
     display: flex;
   }
 
   .menu-icon_line-top {
-    background-color: var(--untitled-ui--gray700);
+    background-color: rgba(255, 255, 255, .96);
     border-radius: 1rem;
-    width: 24px;
+    width: 18px;
     height: 2px;
     padding-bottom: 0;
     padding-right: 0;
   }
 
   .menu-icon_component {
+    background-color: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .14);
+    border-radius: 999px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0;
     padding-bottom: 0;
     padding-right: 0;
     display: flex;
@@ -9450,13 +9504,13 @@ img {
   .uui-navbar07_menu {
     border: 1px solid rgba(230, 237, 242, .18);
     -webkit-text-fill-color: inherit;
-    background: linear-gradient(180deg, rgba(7, 20, 29, .92) 0%, rgba(7, 20, 29, .98) 100%);
+    background: #162850;
     background-clip: border-box;
     align-items: flex-start;
     border-radius: 1.25rem;
     box-shadow: 0 24px 60px rgba(4, 12, 18, .42);
-    -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
     height: auto;
     max-height: calc(100svh - 6.5rem);
     margin-left: 0;
@@ -9547,7 +9601,7 @@ img {
     width: auto;
     box-shadow: none;
     border: 1px solid rgba(230, 237, 242, .14);
-    background: linear-gradient(180deg, rgba(17, 37, 49, .9) 0%, rgba(11, 31, 42, .96) 100%);
+    background: #162850;
     border-radius: 1rem;
     margin-top: .45rem;
     padding: .4rem;
@@ -9578,7 +9632,7 @@ img {
   }
 
   .uui-navbar07_menu-button.w--open .menu-icon_component {
-    background-color: rgba(11, 31, 42, .78);
+    background-color: #162850;
     border-color: rgba(230, 237, 242, .26);
   }
 
@@ -9590,6 +9644,31 @@ img {
     flex-direction: column-reverse;
     align-items: stretch;
     display: flex;
+  }
+
+  .uui-navbar07_menu .switchers_item {
+    height: auto;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .uui-navbar07_menu .switcher-1 {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .uui-navbar07_menu .switcher-1_link {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, .36);
+  }
+
+  .uui-navbar07_menu .switcher-1_link[aria-pressed="true"] {
+    background: none;
+    border: none;
+    color: #fff;
+    box-shadow: none;
   }
 
   .rl_navbar3_tablet-menu-button {
@@ -10799,6 +10878,23 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+  .uui-navbar07_component {
+    box-sizing: border-box;
+    flex-flow: row nowrap;
+    left: 0;
+    right: 0;
+    overflow: visible;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    position: fixed;
+    width: auto;
+  }
+
+  .uui-navbar07_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .tablet-1-col-parent.tablet-1-col, .tablet-1-col, .tablet-1-col-parent.tablet-1-col, .tablet-1-col-parent, .tablet-1-col-parent.tablet-1-col {
     grid-template-columns: 100%;
   }
