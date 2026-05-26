@@ -11638,16 +11638,7 @@ img {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_11324247-4d41-ae49-23cf-d69a3671483e-ef02fdd2 {
-  grid-template-rows: auto auto;
-  grid-template-columns: .75fr 1fr;
-}
-
-#w-node-_712cb675-dd54-5b8f-ba40-683cef488250-ef02fdd2 {
-  grid-row: span 2 / span 2;
-}
-
-#w-node-_1a189397-4910-1d5d-fe43-0e5231e3a6ae-31e3a69e.w-node-ffcea6d1-82b9-9819-004d-326878711c95-ef02fdd2, #w-node-dd8b495c-cba3-0d39-1bec-72577eb2a5d3-31e3a69e.w-node-ffcea6d1-82b9-9819-004d-326878711c9e-ef02fdd2, #w-node-_7c7c286c-95bd-c381-2eaf-005a0cefcb38-31e3a69e.w-node-ffcea6d1-82b9-9819-004d-326878711ca7-ef02fdd2, #w-node-d2fb584f-3db3-7104-4fbf-d1efd73877aa-31e3a69e.w-node-ffcea6d1-82b9-9819-004d-326878711cb4-ef02fdd2, #w-node-b88adc3a-39eb-7abd-ff28-6fe1e0a03510-31e3a69e.w-node-ffcea6d1-82b9-9819-004d-326878711cbd-ef02fdd2, #w-node-dd14fc15-3465-b1b9-691c-af30067aa0c1-31e3a69e.w-node-ffcea6d1-82b9-9819-004d-326878711cc7-ef02fdd2, #w-node-_76fe857f-b14f-ddf6-665d-7967f3bf42ae-f3bf42a7.w-node-ffcea6d1-82b9-9819-004d-326878711cd9-ef02fdd2, #w-node-_76fe857f-b14f-ddf6-665d-7967f3bf42b4-f3bf42a7.w-node-ffcea6d1-82b9-9819-004d-326878711ce2-ef02fdd2, #w-node-_76fe857f-b14f-ddf6-665d-7967f3bf42ba-f3bf42a7.w-node-ffcea6d1-82b9-9819-004d-326878711ceb-ef02fdd2, #w-node-_1339dd47-8813-c6e0-4a5d-d0ad6650e994-523dbcd4.w-node-_95d5c557-829e-1529-f1d1-ff9f67f5daab-ef02fdd2, #w-node-c8c2ddc5-7fe1-faaf-c6fe-451b3c4b6d66-ec59b8e8.w-node-d1ffdc46-744a-265d-1041-9f75b7fa673a-ef02fdd3 {
+#w-node-c8c2ddc5-7fe1-faaf-c6fe-451b3c4b6d66-ec59b8e8.w-node-d1ffdc46-744a-265d-1041-9f75b7fa673a-ef02fdd3 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -11830,18 +11821,6 @@ img {
   }
 
   #w-node-fff297ea-bf4f-e6fc-2fcb-9b19f68f05a6-f68f05a3.w-node-_6533cda2-da6f-761b-31f9-017e30e831de-ef02fdd1 {
-    order: -9999;
-  }
-
-  #w-node-ffcea6d1-82b9-9819-004d-326878711ce0-ef02fdd2 {
-    place-self: auto;
-  }
-
-  #w-node-ffcea6d1-82b9-9819-004d-326878711ce9-ef02fdd2, #w-node-ffcea6d1-82b9-9819-004d-326878711cf2-ef02fdd2 {
-    place-self: stretch stretch;
-  }
-
-  #w-node-_1339dd47-8813-c6e0-4a5d-d0ad6650e995-523dbcd4.w-node-_95d5c557-829e-1529-f1d1-ff9f67f5daaa-ef02fdd2, #w-node-_1339dd47-8813-c6e0-4a5d-d0ad6650e96d-523dbcd4.w-node-_95d5c557-829e-1529-f1d1-ff9f67f5dad2-ef02fdd2 {
     order: -9999;
   }
 

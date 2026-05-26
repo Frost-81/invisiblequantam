@@ -36,10 +36,10 @@
       min-width: 0;
     }
 
-    .protect-hero_layout.w-layout-layout {
+    .protect-hero_layout {
       display: grid;
       grid-template-columns: minmax(0, 34rem) minmax(22rem, 38rem);
-      grid-template-rows: auto;
+      grid-template-rows: auto auto;
       align-items: center;
       justify-content: space-between;
       gap: clamp(1.25rem, 2.2vw, 2rem);
@@ -81,9 +81,15 @@
       max-width: 32rem;
     }
 
+    .protect-hero_intro {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: start;
+    }
+
     .protect-hero_media {
       grid-column: 2;
-      grid-row: 1;
+      grid-row: 1 / 3;
       align-self: center;
       justify-self: end;
       width: 100%;
@@ -284,7 +290,7 @@
         padding-top: calc(var(--_sizes---section--section-padding-vertical) + 4rem);
       }
 
-      .protect-hero_layout.w-layout-layout {
+      .protect-hero_layout {
         grid-template-columns: minmax(0, 1fr) minmax(20rem, 30rem);
         gap: 1.5rem;
       }
@@ -313,25 +319,33 @@
         padding-top: calc(var(--_sizes---section--section-padding-vertical) + 5rem);
       }
 
-      .protect-hero_layout.w-layout-layout {
+      .protect-hero_layout {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto auto;
         gap: 1.25rem;
       }
 
       .protect-hero_copy,
-      .protect-hero_media {
+      .protect-hero_media,
+      .protect-hero_intro {
         grid-column: auto;
         grid-row: auto;
         max-width: none;
       }
 
+      .protect-hero_copy,
+      .protect-hero_intro {
+        text-align: center;
+      }
+
       .protect-hero_title {
         font-size: clamp(2.35rem, 11vw, 3.1rem);
         line-height: .96;
+        max-width: none;
       }
 
       .protect-hero_media {
+        grid-row: auto;
         justify-self: stretch;
         min-height: 13.5rem;
         aspect-ratio: 5 / 4;
@@ -574,12 +588,14 @@
   </div>
   <header class="section is-inverse protect-hero">
     <div class="container protect-hero_container">
-      <div id="w-node-_11324247-4d41-ae49-23cf-d69a3671483e-ef02fdd2" class="w-layout-layout wf-layout-layout protect-hero_layout">
-        <div class="w-layout-cell protect-hero_copy">
+      <div class="protect-hero_layout">
+        <div class="protect-hero_copy">
           <h1 class="protect-hero_title" data-i18n-html="protect.hero.title">Identify &amp; Manage Insider Threats</h1>
+        </div>
+        <div class="protect-hero_media"><img src="images/insiderthreatENG.webp" loading="eager" fetchpriority="high" width="1200" alt="Corporate loss from insider threats- Financial-Reputational-Loss of trust" data-i18n-attr="alt:protect.hero.imageAlt" srcset="images/insiderthreatENG-p-500.webp 500w, images/insiderthreatENG-p-800.webp 800w, images/insiderthreatENG-p-1080.webp 1080w, images/insiderthreatENG.webp 1536w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 46vw, 42vw" class="image-4 protect-hero_image"></div>
+        <div class="protect-hero_intro">
           <p class="protect-hero_text" data-i18n="protect.intro">Some of the most damaging risks come from inside the organization. We combine digital forensics, risk assessment, and technical countermeasures to help you detect insider threats early and stay in control.</p>
         </div>
-        <div id="w-node-_712cb675-dd54-5b8f-ba40-683cef488250-ef02fdd2" class="w-layout-cell protect-hero_media"><img src="images/insiderthreatENG.webp" loading="eager" fetchpriority="high" width="1200" alt="Corporate loss from insider threats- Financial-Reputational-Loss of trust" data-i18n-attr="alt:protect.hero.imageAlt" srcset="images/insiderthreatENG-p-500.webp 500w, images/insiderthreatENG-p-800.webp 800w, images/insiderthreatENG-p-1080.webp 1080w, images/insiderthreatENG.webp 1536w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 46vw, 42vw" class="image-4 protect-hero_image"></div>
       </div>
     </div>
   </header>
@@ -593,42 +609,42 @@
         <div class="card">
           <div class="card_body flex_vertical is-x-center">
             <div class="icon is-large margin-bottom_xsmall"><img src="images/download.svg" loading="lazy" alt="search computer"></div>
-            <h3 id="w-node-_1a189397-4910-1d5d-fe43-0e5231e3a6ae-31e3a69e" class="heading_small w-node-ffcea6d1-82b9-9819-004d-326878711c95-ef02fdd2" data-i18n="protect.card1.heading">Device compromise checks</h3>
+            <h3 class="heading_small" data-i18n="protect.card1.heading">Device compromise checks</h3>
             <p class="text-align_center margin-bottom_none">Targeted forensic review of laptops, phones, and removable media to identify signs of tampering, malware, data staging, or unauthorized access.</p>
           </div>
         </div>
         <div class="card">
           <div class="card_body flex_vertical is-x-center">
             <div class="icon is-large margin-bottom_xsmall"><img src="images/12download.svg" loading="lazy" alt="connections"></div>
-            <h3 id="w-node-dd8b495c-cba3-0d39-1bec-72577eb2a5d3-31e3a69e" class="heading_small w-node-ffcea6d1-82b9-9819-004d-326878711c9e-ef02fdd2" data-i18n="protect.card2.heading">Corporate espionage protection</h3>
+            <h3 class="heading_small" data-i18n="protect.card2.heading">Corporate espionage protection</h3>
             <p class="text-align_center margin-bottom_none">Risk-led assessments and investigative support to help detect trade secret exposure, suspicious data transfers, and insider-enabled intelligence gathering.</p>
           </div>
         </div>
         <div class="card">
           <div class="card_body flex_vertical is-x-center">
             <div class="icon is-large margin-bottom_xsmall"><img src="images/3download.svg" loading="lazy" alt="no sight"></div>
-            <h3 id="w-node-_7c7c286c-95bd-c381-2eaf-005a0cefcb38-31e3a69e" class="heading_small w-node-ffcea6d1-82b9-9819-004d-326878711ca7-ef02fdd2" data-i18n="protect.card3.heading">Unauthorized monitoring</h3>
+            <h3 class="heading_small" data-i18n="protect.card3.heading">Unauthorized monitoring</h3>
             <p class="text-align_center margin-bottom_none">Detection of covert monitoring activity, including suspicious software, rogue access methods, and unauthorized collection of business communications. </p>
           </div>
         </div>
         <div class="card">
           <div class="card_body flex_vertical is-x-center">
             <div class="icon is-large margin-bottom_xsmall"><img src="images/9download.svg" loading="lazy" alt="idea"></div>
-            <h3 id="w-node-d2fb584f-3db3-7104-4fbf-d1efd73877aa-31e3a69e" class="heading_small w-node-ffcea6d1-82b9-9819-004d-326878711cb4-ef02fdd2" data-i18n="protect.card4.heading">Insurance readiness support</h3>
+            <h3 class="heading_small" data-i18n="protect.card4.heading">Insurance readiness support</h3>
             <p class="text-align_center margin-bottom_none">Documented assessments, control reviews, and technical findings that help organizations prepare for cyber insurance underwriting and compliance scrutiny.</p>
           </div>
         </div>
         <div class="card">
           <div class="card_body flex_vertical is-x-center">
             <div class="icon is-large margin-bottom_xsmall"><img src="images/5download.svg" loading="lazy" alt="target style"></div>
-            <h3 id="w-node-b88adc3a-39eb-7abd-ff28-6fe1e0a03510-31e3a69e" class="heading_small w-node-ffcea6d1-82b9-9819-004d-326878711cbd-ef02fdd2" data-i18n="protect.card5.heading">Surveillance detection</h3>
+            <h3 class="heading_small" data-i18n="protect.card5.heading">Surveillance detection</h3>
             <p class="text-align_center margin-bottom_none">Technical sweeps and digital review to identify hidden surveillance risks, unauthorized tracking, and hostile collection activity in sensitive environments.</p>
           </div>
         </div>
         <div class="card">
           <div class="card_body flex_vertical is-x-center">
             <div class="icon is-large margin-bottom_xsmall"><img src="images/8download.svg" loading="lazy" alt="two containers"></div>
-            <h3 id="w-node-dd14fc15-3465-b1b9-691c-af30067aa0c1-31e3a69e" class="heading_small w-node-ffcea6d1-82b9-9819-004d-326878711cc7-ef02fdd2" data-i18n="protect.card6.heading">Internal inquiry services</h3>
+            <h3 class="heading_small" data-i18n="protect.card6.heading">Internal inquiry services</h3>
             <p class="text-align_center margin-bottom_none">Discreet, evidence-based investigations into employee misconduct, policy violations, data leakage, and other matters requiring forensic support or advanced detection techniques.</p>
           </div>
         </div>
@@ -642,27 +658,27 @@
         <h2 class="heading_primary" data-i18n="protect.cta.heading">Stay ahead. Secure your business.</h2>
       </div>
       <div class="w-layout-grid grid_3-col tablet-1-col-1-2 gap-small tabletfix">
-        <div id="w-node-ffcea6d1-82b9-9819-004d-326878711ce0-ef02fdd2" class="ix-link-wrapper">
+        <div class="ix-link-wrapper">
           <a href="#" class="content-block-link gap-xsmall w-inline-block">
-            <div id="w-node-_76fe857f-b14f-ddf6-665d-7967f3bf42ae-f3bf42a7" class="image-ratio_2x3 ratio_1x1_mobile-l w-node-ffcea6d1-82b9-9819-004d-326878711cd9-ef02fdd2"><img width="1216" height="832" alt="Two views of an office desk - one shows nothing suspicious the other shows potential hidden risks" src="images/lightdeskanalysis.webp" loading="lazy" srcset="images/lightdeskanalysis-p-500.webp 500w, images/lightdeskanalysis-p-800.webp 800w, images/lightdeskanalysis-p-1080.webp 1080w, images/lightdeskanalysis.webp 1254w" sizes="(max-width: 479px) 55vw, 49vw" class="image_cover"></div>
+            <div class="image-ratio_2x3 ratio_1x1_mobile-l"><img width="1216" height="832" alt="Two views of an office desk - one shows nothing suspicious the other shows potential hidden risks" src="images/lightdeskanalysis.webp" loading="lazy" srcset="images/lightdeskanalysis-p-500.webp 500w, images/lightdeskanalysis-p-800.webp 800w, images/lightdeskanalysis-p-1080.webp 1080w, images/lightdeskanalysis.webp 1254w" sizes="(max-width: 479px) 55vw, 49vw" class="image_cover"></div>
             <div class="div-block-5">
               <h3 class="heading_small" data-i18n="protect.cta.feature1.heading">Uncover Hidden Risks</h3>
               <p class="max-width_small">Identify unseen vulnerabilities across your systems, data flows, and internal processes.  We expose privacy risks, unauthorized access, and potential data exfiltration before they escalate into costly incidents.<br>‍</p>
             </div>
           </a>
         </div>
-        <div id="w-node-ffcea6d1-82b9-9819-004d-326878711ce9-ef02fdd2" class="ix-link-wrapper">
+        <div class="ix-link-wrapper">
           <a href="#" class="content-block-link gap-xsmall w-inline-block">
-            <div id="w-node-_76fe857f-b14f-ddf6-665d-7967f3bf42b4-f3bf42a7" class="image-ratio_2x3 w-node-ffcea6d1-82b9-9819-004d-326878711ce2-ef02fdd2"><img width="1216" height="832" alt="Office Desk with minimal decoration to conduct interviews" src="images/interview-room.webp" loading="lazy" srcset="images/interview-room-p-500.webp 500w, images/interview-room-p-800.webp 800w, images/interview-room-p-1080.webp 1080w, images/interview-room.webp 1254w" sizes="(max-width: 479px) 48vw, 49vw" class="image_cover"></div>
+            <div class="image-ratio_2x3"><img width="1216" height="832" alt="Office Desk with minimal decoration to conduct interviews" src="images/interview-room.webp" loading="lazy" srcset="images/interview-room-p-500.webp 500w, images/interview-room-p-800.webp 800w, images/interview-room-p-1080.webp 1080w, images/interview-room.webp 1254w" sizes="(max-width: 479px) 48vw, 49vw" class="image_cover"></div>
             <div>
               <h3 class="heading_small" data-i18n="protect.cta.feature2.heading">Ensure Objective Findings</h3>
               <p class="max-width_small">Bring clarity to complex situations with independent, evidence-based investigations.  Our neutral approach helps leadership assess facts objectively and make informed, defensible decisions.<br>‍</p>
             </div>
           </a>
         </div>
-        <div id="w-node-ffcea6d1-82b9-9819-004d-326878711cf2-ef02fdd2" class="ix-link-wrapper">
+        <div class="ix-link-wrapper">
           <a href="#" class="content-block-link gap-xsmall w-inline-block">
-            <div id="w-node-_76fe857f-b14f-ddf6-665d-7967f3bf42ba-f3bf42a7" class="image-ratio_2x3 ratio_1x1_mobile-l w-node-ffcea6d1-82b9-9819-004d-326878711ceb-ef02fdd2"><img width="1216" height="832" alt="image of person working on project" src="images/b0845711-9bca-47b3-b1fa-b7f0c1a05946.avif" loading="lazy" class="image_cover"></div>
+            <div class="image-ratio_2x3 ratio_1x1_mobile-l"><img width="1216" height="832" alt="image of person working on project" src="images/b0845711-9bca-47b3-b1fa-b7f0c1a05946.avif" loading="lazy" class="image_cover"></div>
             <div>
               <h3 class="heading_small" data-i18n="protect.cta.feature3.heading">Investigate Workplace Misconduct</h3>
               <p class="max-width_small">Conduct thorough, discreet investigations into internal misconduct, policy violations, and potential data misuse. We gather and analyze evidence to support HR actions, legal proceedings, and organizational integrity.<br>‍</p>
@@ -675,8 +691,8 @@
   <section class="section protect-contact-section">
     <div class="container">
       <div class="w-layout-grid grid_2-col tablet-1-col gap-xxlarge protect-contact-layout">
-        <div id="w-node-_1339dd47-8813-c6e0-4a5d-d0ad6650e994-523dbcd4" class="grid-item-manual w-node-_95d5c557-829e-1529-f1d1-ff9f67f5daab-ef02fdd2">
-          <div id="w-node-_1339dd47-8813-c6e0-4a5d-d0ad6650e995-523dbcd4" class="flex_vertical gap-medium height_100percent w-node-_95d5c557-829e-1529-f1d1-ff9f67f5daaa-ef02fdd2 protect-contact-aside">
+        <div class="grid-item-manual">
+          <div class="flex_vertical gap-medium height_100percent protect-contact-aside">
             <div class="protect-contact-location">
               <div class="icon"><img src="images/locationdownload.svg" loading="lazy" alt="position marker"></div>
               <div class="flex-child_expand">
@@ -692,7 +708,7 @@
             </a>
           </div>
         </div>
-        <div id="w-node-_1339dd47-8813-c6e0-4a5d-d0ad6650e96d-523dbcd4" class="grid-item-manual w-node-_95d5c557-829e-1529-f1d1-ff9f67f5dad2-ef02fdd2">
+        <div class="grid-item-manual">
           <div class="header protect-contact-main">
             <div class="protect-contact-heading" data-i18n="protect.contact.heading">Expert guidance. Confidential investigations.</div>
             <h2 class="protect-contact-title" data-i18n="protect.contact.title">When you need clarity, act quickly.</h2>
