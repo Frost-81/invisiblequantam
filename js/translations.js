@@ -130,6 +130,8 @@ window.TRANSLATIONS = {
     'process.form.error': 'Submission failed. Please try again.',
 
     /* ── Protect your organization page ─────────────────────── */
+    'protect.hero.title': 'Identify &amp;<br>Manage <br>Insider <br>Threats',
+    'protect.hero.imageAlt': 'Corporate loss from insider threats - Financial - Reputational - Loss of trust',
     'protect.intro': 'Many organizations focus only on external threats, but some of the most damaging risks originate from within. These risks are difficult to detect without the right expertise and tools. Our approach combines digital forensics, risk assessment, and technical countermeasures to help organizations stay protected and in control of the enterprise environment.',
     'protect.section1.heading': 'Corporate internal threats',
     'protect.section2.heading': 'Technical Countermeasures',
@@ -154,9 +156,14 @@ window.TRANSLATIONS = {
     'protect.cta.feature3.heading': 'Investigate Workplace Misconduct',
     'protect.cta.feature3.body': 'Conduct thorough, discreet investigations into internal misconduct, policy violations, and potential data misuse. We gather and analyze evidence to support HR actions, legal proceedings, and organizational integrity.',
     'protect.contact.heading': 'Expert guidance. Confidential investigations.',
+    'protect.contact.title': 'When you need clarity, act quickly.',
     'protect.contact.sub': 'Speak directly to a private investigator.',
     'protect.contact.option1': 'Suspected internal misconduct',
-    'protect.contact.option2': 'Legal or HR investigation support',
+    'protect.contact.option2': 'Data exfiltration or unauthorized access',
+    'protect.contact.option3': 'Unusual system behavior',
+    'protect.contact.option4': 'Legal or HR investigation support',
+    'protect.contact.option5': 'Unauthorized monitoring concerns',
+    'protect.contact.option6': 'Need for independent findings',
     'protect.contact.location': 'We can meet at your office',
     'protect.contact.cta': 'Get started',
 
@@ -296,6 +303,8 @@ window.TRANSLATIONS = {
     'process.form.error': 'Échec de la soumission. Veuillez réessayer.',
 
     /* ── Protect your organization page ─────────────────────── */
+    'protect.hero.title': 'Identifier et<br>gérer les<br>menaces<br>internes',
+    'protect.hero.imageAlt': 'Pertes corporatives liées aux menaces internes - financières - réputationnelles - perte de confiance',
     'protect.intro': "De nombreuses organisations se concentrent uniquement sur les menaces externes, mais certains des risques les plus dommageables proviennent de l'intérieur. Ces risques sont difficiles à détecter sans l'expertise et les outils appropriés. Notre approche combine la forensique numérique, l'évaluation des risques et les contre-mesures techniques pour aider les organisations à rester protégées et maîtresses de leur environnement.",
     'protect.section1.heading': 'Menaces internes corporatives',
     'protect.section2.heading': 'Contre-mesures techniques',
@@ -320,9 +329,14 @@ window.TRANSLATIONS = {
     'protect.cta.feature3.heading': "Enquêter sur l'inconduite en milieu de travail",
     'protect.cta.feature3.body': "Menez des enquêtes approfondies et discrètes sur les inconduites internes, les violations de politique et l'utilisation abusive potentielle de données. Nous collectons et analysons les preuves pour soutenir les actions RH, les procédures légales et l'intégrité organisationnelle.",
     'protect.contact.heading': 'Conseils d\'experts. Enquêtes confidentielles.',
+    'protect.contact.title': 'Lorsque vous avez besoin de clarté, agissez rapidement.',
     'protect.contact.sub': 'Parlez directement à un enquêteur privé.',
     'protect.contact.option1': 'Inconduite interne présumée',
-    'protect.contact.option2': 'Soutien aux enquêtes légales ou RH',
+    'protect.contact.option2': 'Exfiltration de données ou accès non autorisé',
+    'protect.contact.option3': 'Comportement inhabituel des systèmes',
+    'protect.contact.option4': 'Soutien aux enquêtes légales ou RH',
+    'protect.contact.option5': 'Préoccupations liées à une surveillance non autorisée',
+    'protect.contact.option6': 'Besoin de conclusions indépendantes',
     'protect.contact.location': 'Nous pouvons nous rencontrer à votre bureau',
     'protect.contact.cta': 'Commencer',
 

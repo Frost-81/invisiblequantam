@@ -129,24 +129,28 @@
     }
 
     .home-page .home-client-copy {
-      border: 1px solid rgba(11, 31, 42, .08);
+      border: 1px solid rgba(255, 255, 255, .12);
       border-radius: 1.4rem;
-      background: linear-gradient(180deg, rgba(255, 255, 255, .84) 0%, rgba(245, 247, 249, .94) 100%);
-      box-shadow: 0 18px 40px rgba(11, 31, 42, .08);
+      background: linear-gradient(180deg, #162850 0%, #0f1f33 100%);
+      box-shadow: 0 18px 40px rgba(11, 31, 42, .24);
       padding: 1.75rem 1.75rem 1.6rem;
     }
 
-    .home-page .home-client-copy .heading_primary {
-      color: #0b1f2a;
+    .home-page .home-client-heading {
+      color: #fff;
       text-align: center;
-      font-size: clamp(2rem, 3.2vw, 2.75rem);
-      letter-spacing: -.03em;
-      line-height: 1.1;
+      font-size: clamp(2.3rem, 3.8vw, 3.2rem);
+      font-family: "Ibmplexsans Variablefont Wdth Wght", Arial, sans-serif;
+      font-weight: 600;
+      letter-spacing: -.025em;
+      line-height: 1.15;
+      margin-top: 0;
       margin-bottom: .75rem;
+      text-wrap: balance;
     }
 
-    .home-page .home-client-copy .subheading {
-      color: rgba(11, 31, 42, .82);
+    .home-page .home-client-body {
+      color: rgba(255, 255, 255, .85);
       font-size: 1rem;
       line-height: 1.7;
       margin-bottom: 0;
@@ -356,7 +360,7 @@
         padding: 1.35rem 1.2rem;
       }
 
-      .home-page .home-client-copy .subheading {
+      .home-page .home-client-body {
         font-size: .96rem;
         line-height: 1.62;
       }
@@ -698,9 +702,9 @@
   <section class="section home-client-section">
     <div class="container">
       <div class="w-layout-grid grid_2-col tablet-1-col gap-large is-y-top home-client-layout">
-        <div class="header margin-bottom_none home-client-copy">
-          <h2 class="heading_primary" data-i18n="index.whoWeWorkWith.heading">Who We Work With</h2>
-          <p class="subheading" data-i18n="index.whoWeWorkWith.body">We work with law firms, corporate legal departments, executives, and human resources teams requiring discreet, evidence-driven investigations. Our services support litigation, internal misconduct inquiries, workplace harassment investigations, and high-risk situations where factual clarity and defensible findings are essential.</p>
+        <div class="home-client-copy">
+          <h2 class="home-client-heading" data-i18n="index.whoWeWorkWith.heading">Who We Work With</h2>
+          <p class="home-client-body" data-i18n="index.whoWeWorkWith.body">We work with law firms, corporate legal departments, executives, and human resources teams requiring discreet, evidence-driven investigations. Our services support litigation, internal misconduct inquiries, workplace harassment investigations, and high-risk situations where factual clarity and defensible findings are essential.</p>
         </div>
         <div class="home-client-visual">
           <div class="home-client-image-frame">

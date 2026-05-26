@@ -15,6 +15,80 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/cyber-resilience-compliance.webflow.css" rel="stylesheet" type="text/css">
+  <style>
+    .resources-hero-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .resources-hero-card {
+      width: min(100%, 82rem);
+      padding: 3.6rem 4rem 3.35rem;
+      border: 1px solid rgba(255, 255, 255, .09);
+      border-radius: 1.85rem;
+      background: linear-gradient(180deg, rgba(11, 31, 42, .24) 0%, rgba(10, 24, 39, .14) 100%);
+      box-shadow: 0 24px 52px rgba(7, 16, 26, .16);
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+      text-align: center;
+    }
+
+    .resources-hero-kicker {
+      color: #fff;
+      font-family: "Ibmplexsans Variablefont Wdth Wght", Arial, sans-serif;
+      font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+      font-weight: 600;
+      letter-spacing: -.03em;
+      line-height: 1.08;
+      margin: 0 0 2rem;
+      text-wrap: balance;
+    }
+
+    .resources-hero-title {
+      color: #fff;
+      font-family: "Ibmplexsans Variablefont Wdth Wght", Arial, sans-serif;
+      font-size: clamp(2.4rem, 4.4vw, 3.85rem);
+      font-weight: 600;
+      letter-spacing: -.03em;
+      line-height: 1.06;
+      margin: 0 0 2.1rem;
+      text-wrap: balance;
+    }
+
+    .resources-hero-body {
+      color: rgba(255, 255, 255, .88);
+      font-size: 1.16rem;
+      line-height: 1.9;
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 1.15rem 1.35rem;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 1.1rem;
+      background: rgba(255, 255, 255, .05);
+      text-shadow: 0 1px 12px rgba(4, 10, 18, .24);
+    }
+
+    @media screen and (max-width: 767px) {
+      .resources-hero-card {
+        padding: 2.2rem 1.45rem 2rem;
+        border-radius: 1.3rem;
+      }
+
+      .resources-hero-kicker {
+        margin-bottom: 1.25rem;
+      }
+
+      .resources-hero-title {
+        margin-bottom: 1.35rem;
+      }
+
+      .resources-hero-body {
+        font-size: 1rem;
+        line-height: 1.75;
+        padding: 1rem 1rem;
+      }
+    }
+  </style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -245,18 +319,13 @@
     <div class="hero-overlay">
       <div id="w-node-e9eae26c-e0bd-340c-900c-6ab8c931a507-6c16f0f1" class="hero_front w-node-d3a243a6-aad6-2ab6-c8e8-7632d1d99f31-cc8c80e9">
         <div class="container padding_section">
-          <div class="w-layout-grid grid_2-col gap-xlarge is-y-center tablet-1-col-1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23">
-            <div class="grid-item-manual">
-              <div class="header margin-bottom_none">
-                <p class="heading_hero">Defensible Investigations. Proven Reliance. Always.</p>
-              </div>
-            </div>
-            <div class="grid-item-manual">
-              <div class="card"></div>
+          <div class="resources-hero-wrap">
+            <div class="resources-hero-card">
+              <p class="resources-hero-kicker">Defensible Investigations. Proven Reliance. Always.</p>
+              <h1 class="resources-hero-title">Investigation Resources for Corporate Risk &amp; Digital Evidence</h1>
+              <p class="resources-hero-body">Expert guidance for corporate executives and human ressources managers to efficiently mitigate the risks of insider malicious actors and employee misconduct.</p>
             </div>
           </div>
-          <h1 class="resource-h1">Investigation Resources for Corporate Risk &amp; Digital Evidence</h1>
-          <p class="subheading">Expert guidance for corporate executives and human ressources managers to efficiently mitigate the risks of insider malicious actors and employee misconduct.</p>
         </div>
       </div>
       <div id="w-node-e5e7eba0-68db-a19d-6c59-d2c3ac90cbbd-6c16f0f1" aria-hidden="true" class="hero_back w-node-d3a243a6-aad6-2ab6-c8e8-7632d1d99f34-cc8c80e9"><img class="image_cover position_absolute" src="images/daylightoffice.webp" width="1216" height="832" alt="[background image] image of an innovation lab (for an ai developer tools)." sizes="100vw" data-aisg-image-id="7ffe20f4-edab-4e5d-8955-1111c23a9934" loading="lazy" srcset="images/daylightoffice-p-500.webp 500w, images/daylightoffice-p-800.webp 800w, images/daylightoffice-p-1080.webp 1080w, images/daylightoffice.webp 1536w">
