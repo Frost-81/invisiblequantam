@@ -83,6 +83,104 @@
   gtag('js', new Date());
   gtag('config', 'G-BTMR2ZXTWL');
 </script>
+  <style>
+    .media-page-header {
+      padding-bottom: 1.5rem;
+    }
+
+    .media-commission-section {
+      padding-top: 1.5rem;
+    }
+
+    .media-commission-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .media-commission-hero {
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, .16), transparent 34%),
+        linear-gradient(135deg, #11264d 0%, #1d3f73 55%, #244f8f 100%);
+      color: #fff;
+    }
+
+    .media-commission-hero_body,
+    .media-commission-card_body {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .media-commission-hero_body {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .media-commission-hero .eyebrow,
+    .media-commission-hero .heading_primary,
+    .media-commission-hero .media-commission-lead {
+      color: #fff;
+    }
+
+    .media-commission-lead,
+    .media-commission-card_body p,
+    .media-commission-cta_copy p {
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    .media-commission-lead {
+      max-width: 60rem;
+      color: rgba(255, 255, 255, .88);
+      font-size: 1.05rem;
+      text-align: center;
+    }
+
+    .media-commission-pill_row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      justify-content: center;
+    }
+
+    .media-commission-pill {
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 999px;
+      background-color: rgba(255, 255, 255, .12);
+      padding: .55rem .9rem;
+      font-size: .95rem;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .media-commission-grid {
+      align-items: stretch;
+    }
+
+    .media-commission-cta_body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .media-commission-cta_copy {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      max-width: 42rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      .media-commission-cta_body {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
   <!--  Cloudflare Turnstile  -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
 </head>
@@ -184,7 +282,7 @@
       </div>
     </div>
   </div>
-  <header class="section">
+  <header class="section media-page-header">
     <div class="container">
       <div class="w-layout-grid grid_2-col tablet-1-col-1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29 gap-large">
         <div id="w-node-f72bdf1b-2a20-a537-5674-43dd09b0cc39-e326e92c" class="grid-item-manual w-node-df0154db-1bb9-649a-afaa-798bdd824b37-b108a0b7">
@@ -202,28 +300,51 @@
       <div id="w-node-ab54bf4f-2c8c-bea7-2a36-de2df19559d8-e326e92c" class="content-block margin-top_medium w-node-df0154db-1bb9-649a-afaa-798bdd824b7b-b108a0b7"></div>
     </div>
   </header>
-  <section class="section">
-    <div class="container">
-      <div id="w-node-_26662f2a-cc19-404e-855b-0702bb517b39-bb517b35" class="header is-align-center w-node-_7f819805-37a9-ad85-49a6-80b9d5a71d9b-b108a0b7">
-        <h2 class="heading_primary">The Commission Chamberland</h2>
-        <div class="subheading w-richtext">
-          <p>My current work in private investigations, digital forensics, and technical surveillance counter-measures is directly influenced by lessons drawn from the Commission Chamberland era — particularly the importance of evidence integrity, investigative rigor, accountability, and the ability to operate effectively in environments subject to public, legal, and regulatory scrutiny.</p>
+  <section class="section media-commission-section">
+    <div class="container media-commission-stack">
+      <div class="card is-accent-primary media-commission-hero">
+        <div class="card_body padding_large media-commission-hero_body">
+          <div class="eyebrow">Public Record</div>
+          <h2 class="heading_primary">The Commission Chamberland</h2>
+          <p class="media-commission-lead">My current work in private investigations, digital forensics, and technical surveillance counter-measures is directly influenced by lessons drawn from the Commission Chamberland era, particularly the importance of evidence integrity, investigative rigor, accountability, and the ability to operate effectively in environments subject to public, legal, and regulatory scrutiny.</p>
+          <div class="media-commission-pill_row">
+            <div class="media-commission-pill">Evidence integrity</div>
+            <div class="media-commission-pill">Investigative rigor</div>
+            <div class="media-commission-pill">Accountability</div>
+            <div class="media-commission-pill">Public scrutiny readiness</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="rich-text-block-2 w-richtext">
-      <h2 class="heading-2">Background</h2>
-      <p>From 2014 to 2017, I served as an internal affairs police investigator responsible for examining allegations of criminal conduct involving police officers. In 2016, some of the investigations I conducted became part of a broader public controversy involving alleged police leaks to the media, which led to a public commission of inquiry.</p>
-      <p>As the Commission later made clear, the issues at stake extended well beyond any one person or file, raising important questions about investigative methods, judicial authorizations, the protection of journalistic sources, privacy in the digital era, and public confidence in public institutions. Its work ultimately focused on strengthening safeguards and clarifying institutional practices to better protect fundamental rights and freedoms.</p>
-      <p>I address this period openly because it was the subject of public scrutiny, and because it should be understood in its full legal, institutional, and historical context.</p>
-      <h2>Professional Perspective</h2>
-      <p>That period was a defining moment in my career. It placed years of work, judgment, and professional discipline under intense scrutiny and forced a deeper understanding of what rigorous practice truly demands in complex and high-stakes environments.</p>
-      <p>It also brought into focus the broader consequences that can arise when police work, media freedom, confidentiality, institutional trust, and public perception intersect. The lessons I took from that experience continue to guide my practice today: precision, restraint, fairness, accountability, and a constant awareness that serious work must withstand both legal scrutiny and public examination.</p>
-      <p>More than anything, that period shaped a disciplined and thoughtful approach that continues to inform how I work now.</p>
-      <p>Follow the link to the commission&#x27;s website to learn more</p>
-      <p>
-        <a href="https://www.bibliotheque.assnat.qc.ca/guides/fr/commissions-d-enquete-au-quebec-depuis-1867/7735-commission-chamberland-2017?ref=677" target="_blank" rel="noopener noreferrer">Text link</a>
-      </p>
+      <div class="w-layout-grid grid_2-col tablet-1-col gap-medium media-commission-grid">
+        <div class="card on-secondary">
+          <div class="card_body padding_large media-commission-card_body">
+            <div class="eyebrow">Background</div>
+            <h3 class="heading_small">Professional and institutional context</h3>
+            <p>From 2014 to 2017, I served as an internal affairs police investigator responsible for examining allegations of criminal conduct involving police officers. In 2016, some of the investigations I conducted became part of a broader public controversy involving alleged police leaks to the media, which led to a public commission of inquiry.</p>
+            <p>As the Commission later made clear, the issues at stake extended well beyond any one person or file, raising important questions about investigative methods, judicial authorizations, the protection of journalistic sources, privacy in the digital era, and public confidence in public institutions. Its work ultimately focused on strengthening safeguards and clarifying institutional practices to better protect fundamental rights and freedoms.</p>
+            <p>I address this period openly because it was the subject of public scrutiny, and because it should be understood in its full legal, institutional, and historical context.</p>
+          </div>
+        </div>
+        <div class="card on-secondary">
+          <div class="card_body padding_large media-commission-card_body">
+            <div class="eyebrow">Professional Perspective</div>
+            <h3 class="heading_small">How the experience shaped my practice</h3>
+            <p>That period was a defining moment in my career. It placed years of work, judgment, and professional discipline under intense scrutiny and forced a deeper understanding of what rigorous practice truly demands in complex and high-stakes environments.</p>
+            <p>It also brought into focus the broader consequences that can arise when police work, media freedom, confidentiality, institutional trust, and public perception intersect. The lessons I took from that experience continue to guide my practice today: precision, restraint, fairness, accountability, and a constant awareness that serious work must withstand both legal scrutiny and public examination.</p>
+            <p>More than anything, that period shaped a disciplined and thoughtful approach that continues to inform how I work now.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card on-secondary media-commission-cta">
+        <div class="card_body padding_large media-commission-cta_body">
+          <div class="media-commission-cta_copy">
+            <div class="eyebrow">Official Reference</div>
+            <h3 class="heading_small">Follow the commission&#x27;s website to learn more</h3>
+            <p class="text-color_muted">Review the public reference page for additional institutional and historical context related to the Commission Chamberland.</p>
+          </div>
+          <a href="https://www.bibliotheque.assnat.qc.ca/guides/fr/commissions-d-enquete-au-quebec-depuis-1867/7735-commission-chamberland-2017?ref=677" target="_blank" rel="noopener noreferrer" class="button">Commission Chamberland</a>
+        </div>
+      </div>
     </div>
   </section>
   <section>

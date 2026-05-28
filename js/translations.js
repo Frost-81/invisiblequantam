@@ -164,7 +164,7 @@ window.TRANSLATIONS = {
     'protect.contact.option4': 'Legal or HR investigation support',
     'protect.contact.option5': 'Unauthorized monitoring concerns',
     'protect.contact.option6': 'Need for independent findings',
-    'protect.contact.location': 'We can meet at your office',
+    'protect.contact.location': 'We can meet at your office in Gatineau, Montreal, or Québec. For a specific area, please contact us to see if we can accommodate you.',
     'protect.contact.cta': 'Get started',
 
     /* ── 404 / 401 ───────────────────────────────────────────── */
@@ -337,7 +337,7 @@ window.TRANSLATIONS = {
     'protect.contact.option4': 'Soutien aux enquêtes légales ou RH',
     'protect.contact.option5': 'Préoccupations liées à une surveillance non autorisée',
     'protect.contact.option6': 'Besoin de conclusions indépendantes',
-    'protect.contact.location': 'Nous pouvons nous rencontrer à votre bureau',
+    'protect.contact.location': 'Nous pouvons nous rencontrer à votre bureau à Gatineau, Montréal ou Québec. Pour une région spécifique, veuillez nous contacter pour voir si nous pouvons vous accommoder.',
     'protect.contact.cta': 'Commencer',
 
     /* ── 404 / 401 ───────────────────────────────────────────── */
