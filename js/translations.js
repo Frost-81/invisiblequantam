@@ -167,6 +167,13 @@ window.TRANSLATIONS = {
     'protect.contact.location': 'We can meet at your office in Gatineau, Montreal, or Québec. For a specific area, please contact us to see if we can accommodate you.',
     'protect.contact.cta': 'Get started',
 
+    /* ── Guides page ─────────────────────────────────────────── */
+    'guides.tag': 'Internal Investigations',
+    'guides.title': 'Why Workplace Investigations Fail Before They Start',
+    'guides.desc': '8 mistakes that weaken fairness, credibility, and defensibility.',
+    'guides.pdfUrl': 'documents/ID01Internal_investigations_published.pdf',
+    'guides.pdfBtn': 'Open PDF',
+
     /* ── 404 / 401 ───────────────────────────────────────────── */
     '404.heading': 'Page not found',
     '404.body': 'The page you are looking for does not exist.',
@@ -339,6 +346,13 @@ window.TRANSLATIONS = {
     'protect.contact.option6': 'Besoin de conclusions indépendantes',
     'protect.contact.location': 'Nous pouvons nous rencontrer à votre bureau à Gatineau, Montréal ou Québec. Pour une région spécifique, veuillez nous contacter pour voir si nous pouvons vous accommoder.',
     'protect.contact.cta': 'Commencer',
+
+    /* ── Guides page ─────────────────────────────────────────── */
+    'guides.tag': 'Entrevues d\'enquête',
+    'guides.title': 'Entrevue d\'enquête : 8 erreurs critiques',
+    'guides.desc': 'Les erreurs les plus courantes dans la conduite d\'entrevues d\'enquête — et comment les éviter pour obtenir des témoignages fiables et défendables.',
+    'guides.pdfUrl': 'documents/ID02_Entrevues_publiee.pdf',
+    'guides.pdfBtn': 'Ouvrir le PDF',
 
     /* ── 404 / 401 ───────────────────────────────────────────── */
     '404.heading': 'Page introuvable',
